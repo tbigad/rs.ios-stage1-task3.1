@@ -20,6 +20,12 @@
 		E382155F225B533E00E3B12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E382155E225B533E00E3B12B /* Assets.xcassets */; };
 		E3821562225B533E00E3B12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3821560225B533E00E3B12B /* LaunchScreen.storyboard */; };
 		E3821565225B533E00E3B12B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3821564225B533E00E3B12B /* main.m */; };
+		F39907DC243789F400E7BDCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787FA8243665140066701D /* ViewController.m */; };
+		F39907DD24378B8700E7BDCE /* PolynomialConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787F872436434A0066701D /* PolynomialConverter.m */; };
+		F39907DE24378B8A00E7BDCE /* Combinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787F8D243643770066701D /* Combinator.m */; };
+		F39907DF24378BCB00E7BDCE /* T3_PolynomialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787F8A243643590066701D /* T3_PolynomialTests.m */; };
+		F39907E024378BD000E7BDCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787FA8243665140066701D /* ViewController.m */; };
+		F39907E124378BD200E7BDCE /* PolynomialConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787F872436434A0066701D /* PolynomialConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -320,7 +326,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25787F90243643830066701D /* T3_CombinatorTests.m in Sources */,
+				F39907DE24378B8A00E7BDCE /* Combinator.m in Sources */,
+				F39907DD24378B8700E7BDCE /* PolynomialConverter.m in Sources */,
 				25787F8B243643590066701D /* T3_PolynomialTests.m in Sources */,
+				F39907E024378BD000E7BDCE /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39907E124378BD200E7BDCE /* PolynomialConverter.m in Sources */,
+				F39907DC243789F400E7BDCE /* ViewController.m in Sources */,
 				25787FA2243644610066701D /* RS_Task3_UICheckerUITests.m in Sources */,
+				F39907DF24378BCB00E7BDCE /* T3_PolynomialTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
