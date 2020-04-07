@@ -119,7 +119,7 @@
     CGRect buttonFrame = CGRectMake([ViewController screenWidth] / 2 - 50, CGRectGetMidY(self.labelBlue.frame) + 20, 100, 50);
     self.buttonProcess = [[UIButton alloc]initWithFrame:buttonFrame];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
-    [self.buttonProcess setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
+    [self.buttonProcess setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
     self.buttonProcess.accessibilityIdentifier = @"buttonProcess";
     [self.view addSubview: self.buttonProcess];
     [self.buttonProcess addTarget:self action:@selector(didTappedButton) forControlEvents:UIControlEventTouchUpInside];
