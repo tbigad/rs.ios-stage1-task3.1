@@ -25,8 +25,6 @@
 @property (nonatomic, strong) UITextField *textFieldGreen;
 @property (nonatomic, strong) UITextField *textFieldBlue;
 @property (nonatomic, strong) UIButton *buttonProcess;
-@property (nonatomic) UITapGestureRecognizer *tapRecognizer;
-
 @end
 
 
@@ -63,9 +61,9 @@
         [label sizeToFit];
         CGRect rect = label.frame;
         rect.origin.x = 20;
-        rect.origin.y = 100 + (i * 60) + previousHeight;
+        rect.origin.y = 100 + (i * ([ViewController screenHeight] * 0.05 + 10)) + previousHeight;
         rect.size.width = [ViewController screenWidth] * 0.2;
-        rect.size.height = 40;
+        rect.size.height = [ViewController screenHeight] * 0.05;
         previousHeight = rect.size.height;
         label.frame = rect;
         [self.view addSubview:label];
@@ -165,6 +163,10 @@
 
 +(CGFloat) screenWidth {
     return UIScreen.mainScreen.bounds.size.width;
+}
+
++(CGFloat) screenHeight {
+    return UIScreen.mainScreen.bounds.size.height;
 }
 
 @end
