@@ -15,6 +15,23 @@
     return hexString;
 }
 @end
+
+@interface UIViewController ()
+    
+@end
+
+@implementation UIViewController (Utility)
+
++(CGFloat) screenWidth {
+    return UIScreen.mainScreen.bounds.size.width;
+}
+
++(CGFloat) screenHeight {
+    return UIScreen.mainScreen.bounds.size.height;
+}
+
+@end
+
 @interface ViewController() <UITextFieldDelegate>
 @property (nonatomic, strong) UILabel *labelResultColor;
 @property (nonatomic, strong) UILabel *labelRed;
@@ -159,14 +176,6 @@
     self.textFieldBlue.text  = nil;
     self.textFieldGreen.text = nil;
     self.textFieldRed.text = nil;
-}
-
-+(CGFloat) screenWidth {
-    return UIScreen.mainScreen.bounds.size.width;
-}
-
-+(CGFloat) screenHeight {
-    return UIScreen.mainScreen.bounds.size.height;
 }
 
 @end
